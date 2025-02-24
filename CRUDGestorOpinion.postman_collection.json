@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "7ed16f78-4ff2-4a63-a1e7-a86618a01c22",
+		"name": "CRUDGestorOpinion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956970"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "PostRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Fernanda"
+								},
+								{
+									"key": "surname",
+									"value": "Rosales"
+								},
+								{
+									"key": "username",
+									"value": "frosales"
+								},
+								{
+									"key": "email",
+									"value": "frosales@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "FFrosales-1234"
+								},
+								{
+									"key": "phone",
+									"value": "12345678"
+								},
+								{
+									"key": "address",
+									"value": "Zona 18"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "frosales"
+								},
+								{
+									"key": "password",
+									"value": "FFrosales-1234"
+								},
+								{
+									"key": "email",
+									"value": "frosales@gmail.com",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/getUser",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"getUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sebastián"
+								},
+								{
+									"key": "surname",
+									"value": "Figueroa"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/update/67bc05e68b52c592e9482c4a",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"update",
+								"67bc05e68b52c592e9482c4a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePassword",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "lastPassword",
+									"value": "FFrosales-1234"
+								},
+								{
+									"key": "password",
+									"value": "FFrosales-123456"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/updatePassword/67bc05e68b52c592e9482c4a",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"updatePassword",
+								"67bc05e68b52c592e9482c4a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "CreatePost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Final Futbol Liga guate Banrural Clausura"
+								},
+								{
+									"key": "category",
+									"value": "67bbccf50a44cd7f4f009eb8"
+								},
+								{
+									"key": "text",
+									"value": "Coban, Xelaju"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/createPost",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"createPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPosts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/getPosts",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"getPosts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePost",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category",
+									"value": "65e2a485464acc0aa7d48110"
+								},
+								{
+									"key": "title",
+									"value": "Final Futbol Liga guate Banrural Apertura"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/updatePost/67bc091e5111c11fce2a7a2e",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"updatePost",
+								"67bc091e5111c11fce2a7a2e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePost",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/deletePost/67bc091e5111c11fce2a7a2e",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"deletePost",
+								"67bc091e5111c11fce2a7a2e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comment",
+			"item": [
+				{
+					"name": "CreateComment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "Ojala gane xela :)"
+								},
+								{
+									"key": "post",
+									"value": "67bc09925111c11fce2a7a3f"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/createComment",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"createComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetComments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/getComments",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"getComments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateComment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "Con todo Xelaa"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/updateComment/67bc09bc5111c11fce2a7a46",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"updateComment",
+								"67bc09bc5111c11fce2a7a46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/deleteComment/67bc09bc5111c11fce2a7a46",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"deleteComment",
+								"67bc09bc5111c11fce2a7a46"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "PostCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Deportes Guatemala"
+								},
+								{
+									"key": "description",
+									"value": "Todo lo que quieras saber sobre el futbol de guatemala"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/addCategory",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/getCategories",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"getCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Liga Guate Banrural"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2667/updateCategory/67bc0a735111c11fce2a7a53",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"updateCategory",
+								"67bc0a735111c11fce2a7a53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjMDVlNjhiNTJjNTkyZTk0ODJjNGEiLCJ1c2VybmFtZSI6ImZyb3NhbGVzIiwibmFtZSI6IkZlcm5hbmRhIiwiZW1haWwiOiJmcm9zYWxlc0BnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQwMzc1NTc2LCJleHAiOjE3NDAzOTM1NzZ9.HXgQfPsU4GExzqBeVW-LHZ0bUJxtEg2LpYmf4b_HEa0"
+							}
+						],
+						"url": {
+							"raw": "localhost:2667/deleteCategory/67bc0a735111c11fce2a7a53",
+							"host": [
+								"localhost"
+							],
+							"port": "2667",
+							"path": [
+								"deleteCategory",
+								"67bc0a735111c11fce2a7a53"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:2880",
+			"type": "string"
+		}
+	]
+}
